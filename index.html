@@ -5,30 +5,297 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>HCI Project - 1</title>
+    <link rel="stylesheet" href="./index.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 
 </head>
 
-<body>
-    <div class=row>
-        <div class="col">
-            hima
+<body style="background-color: lightgray;">
+
+    <nav class="navbar navbar-dark bg-dark" style="position: 0">
+
+        <a class="navbar-brand" href="#">Microwave Report</a>
+
+    </nav>
+    <div style="margin-top:40px ;">
+
+        <h3>Current design of the Microwave</h3>
+    </div>
+    <div class="card-group row mt-4 ">
+
+        <div class="card col-3 ml-5">
+            <img src="./Design.jpg" style="height: 470px;width: 370px; margin-left: -15px;" class="card-img-top"
+                alt="Original Working Image 1">
+            <div class="card-body">
+                <h5 class="card-title">Microwave Interface</h5>
+                <p class="card-text">This Microwave has basic operations which is basically neccery for every user. It
+                    have special features like saving favroutie cooking styles.</p>
+            </div>
         </div>
-        <div class="col">
-            hima
+        <div class="col-1">
+
         </div>
-        <div class="col">
-            hima
+        <div class="card col-3">
+            <img src="./popcorn working.gif" style="height: 470px;width: 370px; margin-left: -15px;"
+                class="card-img-top" alt="Popcorn Working">
+            <div class="card-body">
+                <h5 class="card-title">Instant Cooking Operation </h5>
+                <p class="card-text">This Microwave has instant cooking options, which helps user to cook basic items
+                    which are commonly used in this region.</p>
+            </div>
         </div>
-        <div class="col">
-            hima
+        <div class="col-1">
+
         </div>
+        <div class="card col-3">
+            <img src="TimeCook working.gif" style="height: 470px;width: 370px; margin-left: -15px;" class="card-img-top"
+                alt="TimeCook Working">
+            <div class="card-body">
+                <h5 class="card-title">Manual Cooking Operation</h5>
+                <p class="card-text">This Microwave has provided manual cooking. To reduce time consumtion on this
+                    feature it is placed in highlited block, since it is most commonly used.</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ml-5">
+
+        <br>
+        <div>
+            <img src="./e8b48468-fdfe-4a03-9406-ef309965f4c6.jpg" class="d-block" style="height: 500px; width: 300px;"
+                alt="Original Working Image 1">
+        </div>
+        <h1 style="color: red;"><B>BALANCE- get current working gifs </B></h1>
+
+    </div> -->
+    <h3 class="mt-5"> The Probems found in the current design are below:</h3>
+    <div class="ml-5 mb-5 mt-4">
+
+        <main id="problems">
+            <section id="problem1" onclick="ChangeArrow(this.id) ">
+                <a href="#problem1">
+                    <h5> <b>Problem 1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></b></h5>
+
+                </a>
+                <div id='problem1Display' style="display: none;">
+                    <h5>
+                        <p>The highlited block is not well encapsulated.</p>
+                    </h5>
+                    <p>
+                        The "Time Cook", "Auto Cook" and "Auto Deforst" are provided in same block.<br>
+                        Since Most of the options in the highlited block are "Automated" and "Time Cook" is a manual
+                        option,
+                        it offen confuses the user when he wanted to cook manually.</p>
+                    <p> <img src="./AutoBlock.gif" class="d-block" style="height: 500px; width: 300px;"
+                            alt="Original Working Image 1">
+                    </p>
+                </div>
+            </section>
+            <section id="problem2" onclick="ChangeArrow(this.id) ">
+                <a href="#problem2">
+                    <h5> <b>Problem 2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></b></h5>
+                </a>
+                <div id='problem2Display' style="display: none;">
+                    <h5>
+                        <p>Automatic buttons needed final approval</p>
+                    </h5>
+                    <p>
+                        The "Auto Cook" and "Auto Deforst" are designed to reduce time of the user.<br>
+                        Even though these buttons are clicked, the machine is halted for the final approval. <br>
+                        The automatic feature is to help user to reduce the time but this feature take equal amount of
+                        time as normal cooking method.
+                    </p>
+                    <p> <img src="./Automatic Not Active.gif" class="d-block" style="height: 500px; width: 300px;"
+                            alt="Original Working Image 1">
+                    </p>
+                </div>
+            </section>
+            <section id="problem3" onclick="ChangeArrow(this.id) ">
+                <a href="#problem3">
+                    <h5><b>Problem 3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></b></h5>
+                </a>
+                <div id='problem3Display' style="display: none;">
+                    <h5>
+                        <p>The Timer and Time Cook are similar </p>
+                    </h5>
+                    <p>
+                        The "Timer" and "Time Cook" have features similar and as a new user to the machine often
+                        confuses with these buttons.<br>
+                        Since the design is not specific to the clock operations and cooking operations, user needs time
+                        to ge used to this machine. <br>
+                    </p>
+                    <p> <img src="./Timer and TimeCook.gif" class="d-block" style="height: 500px; width: 300px;"
+                            alt="Original Working Image 1">
+                    </p>
+                </div>
+            </section>
+            <section id="problem4" onclick="ChangeArrow(this.id) ">
+
+                <a href="#problem4">
+                    <h5><b>Problem 4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg></b></h5>
+                </a>
+                <div id='problem4Display' style="display: none;">
+                    <h5>
+                        <p>Vent Fan is not specific </p>
+                    </h5>
+                    <p>
+                        The "Set Vent Fan" button starts vent fan with three levels as (off-high), (high-low) and
+                        (low-off).<br>
+                        After clicking the button, the current level is displayed for only a second and disapieres. <br>
+                        If user want to know the current level, this design is not helpful. To get to the requried level
+                        user has to complete the whole cycle.
+                    </p>
+                    <p> <img src="./Vent Fan.gif" class="d-block" style="height: 500px; width: 300px;"
+                            alt="Original Working Image 1">
+                    </p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <div class="mt-5">
+        <p>
+        <h3>Common Uses of Microwave:</h3>
+        </p>
+        <div class="ml-5">
+            <ul>
+                <li>Popcorn</li>
+                <li>Beverage</li>
+                <li>Frozen Vegitables / Pizza </li>
+                <li>Dinner Plate</li>
+                <li>Beverage</li>
+            </ul>
+            <br>
+            <p>
+                The mentioned are the frequent operations used daily.<br>
+                The Current design had alredy provided the best way possible to help the user in making it easy and
+                faster for these operations.<br>
+
+
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mt-5">
+        <p>
+        <h3>Rare Uses of Microwave:</h3>
+        </p>
+        <div class="ml-5">
+            <ul>
+                <li>Frozen Meet</li>
+                <li>Timer</li>
+                <li>Power Level </li>
+                <li>Warm</li>
+            </ul>
+            <br>
+            <p>
+                The mentioned are the Rarely used operations.<br>
+                The Current design is not very compatable for these rarly used operations .<br>
+                As mentioned above (In Problems), to defrost the frozen meet it will take around 45 minitues and it has
+                to be cooked as user specifications. The current interface is not helpful.<br>
+                The "Timer" is very confusing with the "Time Cook" as it has similar structure and it is not proper
+                alligned as encapsulated.<br>
+                The "Power Level" and "Warm" are very rarly used since the temparature is normally fixed so that user will know the cooking time and the current design is well established.<br>
+
+            </p>
+        </div>
+    </div>
+    <div class="mt-5">
+        <p>
+        <h3>User Common Sequence of Actions</h3>
+        </p>
+        <br>
+        <p>
+
+        </p>
+    </div>
+
+    <div class="mt-5">
+        <p>
+        <h3>Feedback</h3>
+        </p>
+        <br>
+        <p>
+
+        </p>
+    </div>
+    <div class="mt-5">
+        <p>
+        <h3>Common Mistakes</h3>
+        </p>
+        <br>
+        <p>
+
+        </p>
+    </div>
+    <div class="mt-5">
+        <p>
+        <h3>Improvement Design</h3>
+        </p>
+        <br>
+        <p>
+
+        </p>
     </div>
 
 </body>
+<script>
+    function ChangeArrow(id) {
+        debugger;
+        if (document.getElementById(id).children[0].children[0].children[0].children[0].children[0].attributes[0].value == "M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z") {
+            document.getElementById(id).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z";
+            document.getElementById(id + 'Display').style = "display:none;";
+        }
+        else {
+            var arr = [];
+            for (let i = 1; i <= 4; i++) {
+                if(id.slice(-1) != i){
+                    arr.push(i)
+                }
+            }
+            document.getElementById(id).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+            document.getElementById(id + 'Display').style = "display:block;";
+            arr.forEach(i => {
+                document.getElementById(id.slice(0, 7)+i + 'Display').style = "display:none;";
+                document.getElementById((id.slice(0, 7)+i)).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z";
+
+            });
+            // document.getElementById(id.slice(0, 7)+i + 'Display').style = "display:none;";
+            // document.getElementById(id + 'Display').style = "display:none;";
+            // document.getElementById(id + 'Display').style = "display:none;";
+        }
+
+    }
+</script>
 
 </html>

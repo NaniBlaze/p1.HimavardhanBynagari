@@ -1,0 +1,14 @@
+/* #problems section p{
+     display:none;
+} */
+/* #problems section:target p{
+     display:block;
+} */
+#problems section a{
+     color:black;
+
+}
+#problems section a:hover{
+     text-decoration:underline;
+     
+}
