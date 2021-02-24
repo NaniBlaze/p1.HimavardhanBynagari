@@ -24,17 +24,18 @@
 </head>
 
 <body style="background-color: lightgray;">
+    <div>
+        <nav class="navbar navbar-dark bg-dark">
 
-    <nav class="navbar navbar-dark bg-dark" style="position: 0">
+            <a class="navbar-brand" href="#">Microwave Report</a>
 
-        <a class="navbar-brand" href="#">Microwave Report</a>
-
-    </nav>
-    <div style="margin-top:40px ;">
+        </nav>
+    </div>
+    <div class=" ml-4 " style="margin-top:40px ;">
 
         <h3>Current design of the Microwave</h3>
     </div>
-    <div class="card-group row mt-4 ">
+    <div class="card-group row mt-4 ml-3">
 
         <div class="card col-3 ml-5">
             <img src="./Design.jpg" style="height: 470px;width: 370px; margin-left: -15px;" class="card-img-top"
@@ -80,12 +81,12 @@
         <h1 style="color: red;"><B>BALANCE- get current working gifs </B></h1>
 
     </div> -->
-    <h3 class="mt-5"> The Probems found in the current design are below:</h3>
+    <h3 class="mt-5 ml-4" > The Probems found in the current design are below:</h3>
     <div class="ml-5 mb-5 mt-4">
 
         <main id="problems">
             <section id="problem1" onclick="ChangeArrow(this.id) ">
-                <a href="#problem1">
+                <a>
                     <h5> <b>Problem 1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
@@ -108,7 +109,7 @@
                 </div>
             </section>
             <section id="problem2" onclick="ChangeArrow(this.id) ">
-                <a href="#problem2">
+                <a>
                     <h5> <b>Problem 2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
@@ -131,7 +132,7 @@
                 </div>
             </section>
             <section id="problem3" onclick="ChangeArrow(this.id) ">
-                <a href="#problem3">
+                <a>
                     <h5><b>Problem 3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
@@ -155,7 +156,7 @@
             </section>
             <section id="problem4" onclick="ChangeArrow(this.id) ">
 
-                <a href="#problem4">
+                <a>
                     <h5><b>Problem 4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
@@ -182,7 +183,7 @@
 
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5 ml-4">
         <p>
         <h3>Common Uses of Microwave:</h3>
         </p>
@@ -206,7 +207,7 @@
 
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5 ml-4">
         <p>
         <h3>Rare Uses of Microwave:</h3>
         </p>
@@ -225,22 +226,38 @@
                 to be cooked as user specifications. The current interface is not helpful.<br>
                 The "Timer" is very confusing with the "Time Cook" as it has similar structure and it is not proper
                 alligned as encapsulated.<br>
-                The "Power Level" and "Warm" are very rarly used since the temparature is normally fixed so that user will know the cooking time and the current design is well established.<br>
+                The "Power Level" and "Warm" are very rarly used since the temparature is normally fixed so that user
+                will know the cooking time and the current design is well established.<br>
 
             </p>
         </div>
     </div>
-    <div class="mt-5">
+    <div class="mt-3 ml-4">
         <p>
         <h3>User Common Sequence of Actions</h3>
         </p>
-        <br>
-        <p>
-
+        <p >
+            <ol class="ml-5">
+                <li>
+                    User open the door and place the item inside microwave.
+                </li>
+                <li>
+                    Select the required option. 
+                </li>
+                <li>
+                    If user selects default options or favoruit options, then the machine starts automatically.
+                </li>
+                <li>
+                    If user wants to manually add the time and power level he can do that with ease.
+                </li>
+                <li>
+                   The machine will notify the user with sound and with a display message ralated to the respective feedback.
+                </li>
+            </ol>
         </p>
     </div>
 
-    <div class="mt-5">
+    <div class="mt-5 ml-4">
         <p>
         <h3>Feedback</h3>
         </p>
@@ -249,7 +266,7 @@
 
         </p>
     </div>
-    <div class="mt-5">
+    <div class="mt-5 ml-4">
         <p>
         <h3>Common Mistakes</h3>
         </p>
@@ -258,7 +275,7 @@
 
         </p>
     </div>
-    <div class="mt-5">
+    <div class="mt-5 ml-4">
         <p>
         <h3>Improvement Design</h3>
         </p>
@@ -279,15 +296,15 @@
         else {
             var arr = [];
             for (let i = 1; i <= 4; i++) {
-                if(id.slice(-1) != i){
+                if (id.slice(-1) != i) {
                     arr.push(i)
                 }
             }
             document.getElementById(id).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
             document.getElementById(id + 'Display').style = "display:block;";
             arr.forEach(i => {
-                document.getElementById(id.slice(0, 7)+i + 'Display').style = "display:none;";
-                document.getElementById((id.slice(0, 7)+i)).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z";
+                document.getElementById(id.slice(0, 7) + i + 'Display').style = "display:none;";
+                document.getElementById((id.slice(0, 7) + i)).children[0].children[0].children[0].children[0].children[0].attributes[0].value = "M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z";
 
             });
             // document.getElementById(id.slice(0, 7)+i + 'Display').style = "display:none;";

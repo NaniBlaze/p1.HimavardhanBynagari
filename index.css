@@ -9,6 +9,8 @@
 
 }
 #problems section a:hover{
+     cursor: pointer;
      text-decoration:underline;
+     
      
 }
