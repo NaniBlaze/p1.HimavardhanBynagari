@@ -24,18 +24,19 @@
 </head>
 
 <body style="background-color: lightgray;">
-    <div>
-        <nav class="navbar navbar-dark bg-dark">
+    <div class="mb-5">
 
-            <a class="navbar-brand" href="#">Microwave Report</a>
-
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" style="margin-left: 44%;" href="#">
+                <h4><b>Microwave Report</b></h4>
+            </a>
         </nav>
     </div>
-    <div class=" ml-4 " style="margin-top:40px ;">
+    <div class=" ml-4" style="margin-top:85px ;">
 
-        <h3>Current design of the Microwave</h3>
+        <h3>Current design of the Microwave :</h3>
     </div>
-    <div class="card-group row mt-4 ml-3">
+    <div class="card-group row mt-4">
 
         <div class="card col-3 ml-5">
             <img src="./Design.jpg" style="height: 470px;width: 370px; margin-left: -15px;" class="card-img-top"
@@ -81,13 +82,13 @@
         <h1 style="color: red;"><B>BALANCE- get current working gifs </B></h1>
 
     </div> -->
-    <h3 class="mt-5 ml-4" > The Probems found in the current design are below:</h3>
+    <h3 class="mt-5 ml-4"> The Probems found in the current design are below:</h3>
     <div class="ml-5 mb-5 mt-4">
 
         <main id="problems">
             <section id="problem1" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5> <b>Problem 1 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <h5 disabled> <b>Problem 1 - The highlited block is not well encapsulated <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -95,9 +96,9 @@
 
                 </a>
                 <div id='problem1Display' style="display: none;">
-                    <h5>
+                    <!-- <h5>
                         <p>The highlited block is not well encapsulated.</p>
-                    </h5>
+                    </h5> -->
                     <p>
                         The "Time Cook", "Auto Cook" and "Auto Deforst" are provided in same block.<br>
                         Since Most of the options in the highlited block are "Automated" and "Time Cook" is a manual
@@ -110,16 +111,16 @@
             </section>
             <section id="problem2" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5> <b>Problem 2 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <h5> <b>Problem 2 - Automatic buttons needed final approval <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
                 </a>
                 <div id='problem2Display' style="display: none;">
-                    <h5>
+                    <!-- <h5>
                         <p>Automatic buttons needed final approval</p>
-                    </h5>
+                    </h5> -->
                     <p>
                         The "Auto Cook" and "Auto Deforst" are designed to reduce time of the user.<br>
                         Even though these buttons are clicked, the machine is halted for the final approval. <br>
@@ -133,16 +134,16 @@
             </section>
             <section id="problem3" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5><b>Problem 3 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <h5><b>Problem 3 - The Timer and Time Cook are similar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
                 </a>
                 <div id='problem3Display' style="display: none;">
-                    <h5>
+                    <!-- <h5>
                         <p>The Timer and Time Cook are similar </p>
-                    </h5>
+                    </h5> -->
                     <p>
                         The "Timer" and "Time Cook" have features similar and as a new user to the machine often
                         confuses with these buttons.<br>
@@ -157,16 +158,16 @@
             <section id="problem4" onclick="ChangeArrow(this.id) ">
 
                 <a>
-                    <h5><b>Problem 4 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <h5><b>Problem 4 - Vent Fan is not specific <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
                 </a>
                 <div id='problem4Display' style="display: none;">
-                    <h5>
+                    <!-- <h5>
                         <p>Vent Fan is not specific </p>
-                    </h5>
+                    </h5> -->
                     <p>
                         The "Set Vent Fan" button starts vent fan with three levels as (off-high), (high-low) and
                         (low-off).<br>
@@ -195,7 +196,7 @@
                 <li>Dinner Plate</li>
                 <li>Beverage</li>
             </ul>
-            <br>
+
             <p>
                 The mentioned are the frequent operations used daily.<br>
                 The Current design had alredy provided the best way possible to help the user in making it easy and
@@ -218,7 +219,7 @@
                 <li>Power Level </li>
                 <li>Warm</li>
             </ul>
-            <br>
+
             <p>
                 The mentioned are the Rarely used operations.<br>
                 The Current design is not very compatable for these rarly used operations .<br>
@@ -236,24 +237,25 @@
         <p>
         <h3>User Common Sequence of Actions</h3>
         </p>
-        <p >
-            <ol class="ml-5">
-                <li>
-                    User open the door and place the item inside microwave.
-                </li>
-                <li>
-                    Select the required option. 
-                </li>
-                <li>
-                    If user selects default options or favoruit options, then the machine starts automatically.
-                </li>
-                <li>
-                    If user wants to manually add the time and power level he can do that with ease.
-                </li>
-                <li>
-                   The machine will notify the user with sound and with a display message ralated to the respective feedback.
-                </li>
-            </ol>
+        <p>
+        <ol class="ml-5">
+            <li>
+                User open the door and place the item inside microwave.
+            </li>
+            <li>
+                Select the required option.
+            </li>
+            <li>
+                If user selects default options or favoruit options, then the machine starts automatically.
+            </li>
+            <li>
+                If user wants to manually add the time and power level he can do that with ease.
+            </li>
+            <li>
+                The machine will notify the user with sound and with a display message ralated to the respective
+                feedback.
+            </li>
+        </ol>
         </p>
     </div>
 
@@ -263,6 +265,73 @@
         </p>
         <br>
         <p>
+            The machine provides feedback in 2 ways simultaniously.<br>
+        <ul>
+            <li>
+                <b> Audio :</b> It provides different audio signals for different tasks.<br>
+                <div class="row mt-3">
+                    <div class="col-5 card">
+                        <h5 class="card-header">Cooking Feedback</h5>
+                        <div class="card-body">
+                            <p class="card-text">When ever the cooking task's are completed the machine indicates user
+                                with this sound.
+                            </p>
+                            <audio controls>
+                                <source src="./cooking (mp3cut.net).mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-5 card">
+                        <h5 class="card-header">Timer Feedback</h5>
+                        <div class="card-body">
+                            <p class="card-text">When ever the clock task's are completed the machine indicates user
+                                with this sound.
+                            </p>
+                            <audio controls>
+                                <source src="./timer (mp3cut.net).mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="mt-5">
+                <b>Display :</b> It provides different messages in the machine screen respective to the task
+                completed.<br>
+                <div class="row mt-3">
+                    <div class="col-5 card">
+                        <h5 class="card-header">Cooking Feedback</h5>
+                        <div class="card-body">
+                            <p class="card-text">When ever the cooking task's are completed the machine generates this
+                                message to notify user.
+
+                            </p>
+                            <img class="card-img-top mb-4" style="height: 500px; width: 400px;" src="./cooking end.jpeg"
+                                alt="cooking image feedback">
+                        </div>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-5 card">
+                        <h5 class="card-header">Timer Feedback</h5>
+                        <div class="card-body">
+                            <p class="card-text">When ever the clock task's are completed the machine generates this
+                                message to notify user.
+                            </p>
+                            <img class="card-img-top mb-4" style="height: 500px; width: 400px;" src="./Timer end.gif"
+                                alt="timer gif feedback">
+                        </div>
+                    </div>
+
+            </li>
+        </ul>
 
         </p>
     </div>
@@ -270,9 +339,25 @@
         <p>
         <h3>Common Mistakes</h3>
         </p>
-        <br>
         <p>
+        <ul>
+            <li>
+                As I mentioned in the existing problems, the user often confuses with the "Time Cook" and "Timer"
+                buttons because of their uneven placement in the design.
+            </li>
+            <li>
+                Since the "Time cook" is in the hilighted design of the Automatic functionality, the user might get the
+                wrong idea of the functionality.
 
+            </li>
+            <li>
+                Everytime the task is ended, the machine will not automatically come to the initial position unless the user clicks the "cancel" button.<br>
+                This might confuse the user at first.
+            </li>
+            <li>
+
+            </li>
+        </ul>
         </p>
     </div>
     <div class="mt-5 ml-4">
