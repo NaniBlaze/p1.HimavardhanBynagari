@@ -88,7 +88,8 @@
         <main id="problems">
             <section id="problem1" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5 disabled> <b>Problem 1 - The highlited block is not well encapsulated <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    <h5 disabled> <b>Problem 1 - The highlited block is not well encapsulated <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
@@ -111,8 +112,9 @@
             </section>
             <section id="problem2" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5> <b>Problem 2 - Automatic buttons needed final approval <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <h5> <b>Problem 2 - Automatic buttons needed final approval <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
@@ -134,8 +136,9 @@
             </section>
             <section id="problem3" onclick="ChangeArrow(this.id) ">
                 <a>
-                    <h5><b>Problem 3 - The Timer and Time Cook are similar <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <h5><b>Problem 3 - The Timer and Time Cook are similar <svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
@@ -158,8 +161,8 @@
             <section id="problem4" onclick="ChangeArrow(this.id) ">
 
                 <a>
-                    <h5><b>Problem 4 - Vent Fan is not specific <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <h5><b>Problem 4 - Vent Fan is not specific <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                             </svg></b></h5>
@@ -351,7 +354,8 @@
 
             </li>
             <li>
-                Everytime the task is ended, the machine will not automatically come to the initial position unless the user clicks the "cancel" button.<br>
+                Everytime the task is ended, the machine will not automatically come to the initial position unless the
+                user clicks the "cancel" button.<br>
                 This might confuse the user at first.
             </li>
             <li>
@@ -362,7 +366,119 @@
     </div>
     <div class="mt-5 ml-4">
         <p>
-        <h3>Improvement Design</h3>
+        <h3>Improvement Design Plan</h3>
+        </p>
+        <br>
+        <p class="ml-5">
+            This is the basic design I created is shown below.<br>
+
+
+            <br> The First Screen of this model contails basic information like "Time" and most necessary options.
+
+
+        <ul class="ml-5">
+            <li>
+                <b>Time : </b> This feature shows the time in 24 hours format (optimal way for everyone) and the time is
+                taken by the current region of the machine.<br>
+            </li>
+            <br>
+            <li>
+                <b>Timer : </b> This features allows the user to set time and the machine will coundown the time and
+                notify the user when time is completed. This comes handy for the user on occasional situations rather
+                than only for cooking.
+            </li>
+            <br>
+            <li>
+                <b>Cook : </b> This option will take user to the manual cooking page where the user can enter the time
+                required and after approval the microwave cooks the food and notifies the User.
+            </li>
+            <br>
+            <li>
+                <b>Automatic Section : </b> This section has 3 options. Which works automatically with fixed time
+                registered in the system. These buttons does not require any further approval from user like the olds
+                design, so this will help user to cook faster. These options work only when the door of the microwave is
+                closed.
+                <br>
+                <br>
+                The options provided in the Automatic Section are :<br>
+                <ul class="ml-5">
+                    <li>
+                        <b>Auto Cook : </b> This option cooks the food automatically when the door is closed for 2
+                        minitues of time.
+                    </li>
+                    <li>
+                        <b>Auto Deforst : </b> This option will deforst the item in the microwave for 45 minitues.
+                    </li>
+                    <li>
+                        <b>Warm : </b> This option will warm the food for 1 minitue.
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <b>Special Features :</b> These features are linked to the microwave which are useful to the user while
+                cooking or doing something else.
+                <br>
+                The Special Features provided in this setion are : <br>
+                <ul class="ml-5">
+                    <li>
+                        <b>Vent Fan : </b> This feature turns on the vent fan and helps user to remove the cooking smoke
+                        at ease and helps in several occasions.
+                    </li>
+                    <li>
+                        <b>Lights : </b> The lights are embeded to the microwave and this feature helps user to turn on
+                        and off the lights.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+        The "Cook" and "Timer" option will take user to different screen where user normally enter the time required for
+        action. This data entry page design is as below.
+
+
+        <br> Most of the design looks similar for "Cook" and "Timer" options so a message is displayed to the user
+        saying "Manual Cooking" and "Timer" respectively.
+        <br>
+        In this screen the machine provides three options :
+        <ul>
+            <li>
+                <b>Start : </b> This will start the cooking or Timer with the timer mentioned by the user. For cooking
+                alone, if the door of microwave is open then cooking will automatically gets paused and after cloing the
+                door it resumes automatically.
+
+            </li>
+            <li>
+                <b>Cancel : </b> This will cancel the operation and directs the user to the main scrren of microwave.
+            </li>
+            <li>
+                <b>Clear : </b> This feature will clear the time-input entered and allows user to enter new time.
+            </li>
+        </ul>
+        <br>
+        Finally the cooking Screen, The cooking screen will show the user the cooking-percentage completed and with a
+        designed area covering diagram representes the percentage completed. While the microwave is cooking the food or
+        processing the timer, two options are displayed which are :
+        <ul>
+            <li>
+                <b>Pause/Resume : </b> This buttons allows user to pause or resume the cooking and timer actions.
+            </li>
+            <li>
+                <b>Stop :</b> This feature allows user to stop the process either cooking or timer instantly and directs
+                to the main screen of the microwave.
+            </li>
+        </ul>
+        <br>
+        After the cooking is completed these options ("Pause/Resume" and "Stop") are removed and a new button comesup
+        saying "Home Screen". This will direct the user to the main screen of the microwave.
+        <br> <br>
+        <h5>Note : </h5> Once the manual cooking option is selected the automatic cooking options from "Automatic
+        Section" are disabled to the user.
+        </p>
+    </div>
+    <div class="mt-5 ml-4">
+        <p>
+        <h3>Presentaion : </h3>
         </p>
         <br>
         <p>
